@@ -1,0 +1,95 @@
+:root {
+    --default-color: white;
+    --default-background-color: ivory;
+    --default-button-color: hotpink;
+    --default-button-color-2: dodgerblue;
+    --default-button-activated-color: deeppink;
+}
+/* 
+display
+margin
+border
+background(with color)
+padding
+height × width 
+font
+color
+*/
+
+/* BASIC */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto";
+    color: var(--default-color)
+}
+
+/* HEADER */
+.header h1, .header h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+}
+.header h1 {
+    margin-top: 50px;
+}
+.header h5 {
+    margin-bottom: 30px;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: var(--default-background-color);
+    padding: 10px;
+    width: 300px;
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lavenderblush;
+    padding: 10px;
+    height: 70px;
+}
+.screen div{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0px;
+}
+.btn-2 {
+    grid-column: 2 span;
+    background-color: var(--default-button-color-2) !important;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: var(--default-button-color);
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* FOOTER */
+

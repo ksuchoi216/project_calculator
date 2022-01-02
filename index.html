@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <script src="calculator.js" defer></script>
+    </head>
+    <body>
+        <header class='header'>
+            <h1>WEB CALCULATOR</h1>
+            <h5>made by KC</h5>
+        </header>
+        <main class='main'>
+            <div class='calculator'>
+                <div class="screen">
+                    <div id="lastOperationScreen"></div>
+                    <div id="currentOperationScreen">0</div>
+                </div>
+                <div class="button-grid">
+                    <!-- bigger buttons -->
+                    <button class="btn btn-2" id="clearBtn">CLEAR</button>
+                    <button class="btn btn-2" id="deleteBtn">DELETE</button>
+                    <!-- keypad and operator buttons -->
+                    <!-- 1st line -->
+                    <button class="btn" value="7" data-num>7</button>
+                    <button class="btn" value="8" data-num>8</button>
+                    <button class="btn" value="9" data-num>9</button>
+                    <button class="btn" value="÷" data-operator>÷</button>
+                    <!-- 2nd line --> 
+                    <button class="btn" value="4" data-num>4</button>
+                    <button class="btn" value="5" data-num>5</button>
+                    <button class="btn" value="6" data-num>6</button>
+                    <button class="btn" value="x" data-operator>x</button>
+                    <!-- 3rd line --> 
+                    <button class="btn" value="1" data-num>1</button>
+                    <button class="btn" value="2" data-num>2</button>
+                    <button class="btn" value="3" data-num>3</button>
+                    <button class="btn" value="-" data-operator>-</button>
+                    <!-- 4rd line -->  
+                    <button class="btn" value="." data-num>.</button>
+                    <button class="btn" value="0" data-num>0</button>
+                    <button class="btn" value="=" data-operator>=</button>
+                    <button class="btn" value="+" data-operator>+</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
